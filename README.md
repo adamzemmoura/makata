@@ -1,4 +1,4 @@
-# kaazba
+# Hakuna Ma Kata
 Final project for CSCI-e74
 
 
