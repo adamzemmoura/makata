@@ -10,6 +10,19 @@ Final project for CSCI-e74
 * Kristin Rievley - Developer
 
 ## Stakeholder Types
-1. Kaazba Owner
-2. Kaazba Admin
-3. Kaazba User
+1. Owner
+2. Admin
+3. User
+
+## Makata
+
+## Backlog
+https://trello.com/b/0x2NUutv/csci-e-71-agile-software-development-final-project
+
+## Definition of Ready
+1. Title
+2. User story opening sentence
+3. Additional details
+4. Estimated in story points.
+5. Labeled
+
