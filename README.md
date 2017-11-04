@@ -10,11 +10,16 @@ Final project for CSCI-e74
 * Kristin Rievley - Developer
 
 ## Stakeholder Types
-1. Owner
+1. Owner - Nadir Simon
 2. Admin
 3. User
 
+## User Persona
+-- Add location of user persona.
+
 ## Makata
+-- Insert Far Vision
+-- Insert Near Vision
 
 ## Backlog
 https://trello.com/b/0x2NUutv/csci-e-71-agile-software-development-final-project
@@ -25,4 +30,12 @@ https://trello.com/b/0x2NUutv/csci-e-71-agile-software-development-final-project
 3. Additional details
 4. Estimated in story points.
 5. Labeled
+
+## Size Estimating Activity
+Our team chose to use a website, https://play.planningpoker.com, to simulate the on campus
+activity of using cards to estimate the story points for our user stories. The development team
+estimated the story points for each item in the backlog.
+
+## Product Backlog
+https://trello.com/b/0x2NUutv/csci-e-71-agile-software-development-final-project
 
