@@ -21,9 +21,6 @@ Final project for CSCI-e74
 -- Insert Far Vision
 -- Insert Near Vision
 
-## Backlog
-https://trello.com/b/0x2NUutv/csci-e-71-agile-software-development-final-project
-
 ## Definition of Ready
 1. Title
 2. User story opening sentence
@@ -38,4 +35,7 @@ estimated the story points for each item in the backlog.
 
 ## Product Backlog
 https://trello.com/b/0x2NUutv/csci-e-71-agile-software-development-final-project
+
+## Ordering
+Items in the backlog were ordered by dependency to the other items and importance to the owner stakeholder.
 
