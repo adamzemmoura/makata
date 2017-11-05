@@ -15,7 +15,7 @@ Final project for CSCI-e74
 3. User
 
 ## User Persona
--- Add location of user persona.
+https://github.com/hakuna-ma-kata/makata/blob/master/Makata%20User%20Persona%20-%20Nadir%20Simon.pdf
 
 ## Product
 ### Name: Makata
