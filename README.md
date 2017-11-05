@@ -15,7 +15,25 @@ Final project for CSCI-e74
 3. User
 
 ## User Persona
-https://github.com/hakuna-ma-kata/makata/blob/master/Makata%20User%20Persona%20-%20Nadir%20Simon.pdf
+[Makata User Persona](https://github.com/hakuna-ma-kata/makata/blob/master/Makata%20User%20Persona%20-%20Nadir%20Simon.pdf)
+
+Details -
+
+Co-Founder of Kaazba Music - a creative music
+agency providing musical branding to the
+luxury, fashion, art and entertainment industries.
+
+Is 32 years old, studied at Universite´ Paris
+Diderot (Paris VII), Jussieu Campus.
+
+Interested in the impact and identity of sounds
+and music for various types of media.
+
+Provides original music compositions and
+licenses pre-existing music for clients.
+
+Specializes in music production, supervision
+and synchronization.
 
 ## Product
 ### Name: Makata
