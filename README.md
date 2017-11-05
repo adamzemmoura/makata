@@ -15,9 +15,10 @@ Final project for CSCI-e74
 3. User
 
 ## User Persona
-[Makata User Persona](https://github.com/hakuna-ma-kata/makata/blob/master/Makata%20User%20Persona%20-%20Nadir%20Simon.pdf)
 
 Details -
+
+Name: Nadir Simon
 
 Co-Founder of Kaazba Music - a creative music
 agency providing musical branding to the
@@ -34,6 +35,8 @@ licenses pre-existing music for clients.
 
 Specializes in music production, supervision
 and synchronization.
+
+[Makata User Persona](https://github.com/hakuna-ma-kata/makata/blob/master/Makata%20User%20Persona%20-%20Nadir%20Simon.pdf)
 
 ## Product
 ### Name: Makata
