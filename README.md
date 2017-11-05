@@ -17,9 +17,12 @@ Final project for CSCI-e74
 ## User Persona
 -- Add location of user persona.
 
-## Makata
--- Insert Far Vision
--- Insert Near Vision
+## Product
+### Name: Makata
+### Far Vision
+Best music management system.
+### Near Vision
+Makata has an attractive design that enhances the user experience. Administrators are able to upload songs easily and users are able to find and play them with just a couple of clicks. The applications follows best industry security standards, providing artists peace of mind knowing their work has been stored safely.
 
 ## Definition of Ready
 1. Title
