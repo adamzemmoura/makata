@@ -1,53 +1,65 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# Hakuna Ma Kata
+Final project for CSCI-e74
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
 
-## About Laravel
+## Roster
+* Adam Zemmoura - Product Owner
+* Jose Andrade - Scrum Master
+* Sean Ward - Developmer
+* E Kathuria - Developer
+* Kristin Rievley - Developer
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+## Stakeholder Types
+1. Owner - Nadir Simon
+2. Admin
+3. User
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## User Persona
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+Details -
 
-## Learning Laravel
+Name: Nadir Simon
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+Co-Founder of Kaazba Music - a creative music
+agency providing musical branding to the
+luxury, fashion, art and entertainment industries.
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+Is 32 years old, studied at Universite´ Paris
+Diderot (Paris VII), Jussieu Campus.
 
-## Laravel Sponsors
+Interested in the impact and identity of sounds
+and music for various types of media.
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
+Provides original music compositions and
+licenses pre-existing music for clients.
 
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
+Specializes in music production, supervision
+and synchronization.
 
-## Contributing
+[Makata User Persona](https://github.com/hakuna-ma-kata/makata/blob/master/Makata%20User%20Persona%20-%20Nadir%20Simon.pdf)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+## Product
+### Name: Makata
+### Far Vision
+Best music management system.
+### Near Vision
+Makata has an attractive design that enhances the user experience. Administrators are able to upload songs easily and users are able to find and play them with just a couple of clicks. The applications follows best industry security standards, providing artists peace of mind knowing their work has been stored safely.
 
-## Security Vulnerabilities
+## Definition of Ready
+1. Title
+2. User story opening sentence
+3. Additional details
+4. Estimated in story points.
+5. Labeled
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+## Size Estimating Activity
+Our team chose to use a website, https://play.planningpoker.com, to simulate the on campus
+activity of using cards to estimate the story points for our user stories. The development team
+estimated the story points for each item in the backlog.
 
-## License
+## Product Backlog
+https://trello.com/b/0x2NUutv/csci-e-71-agile-software-development-final-project
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+## Ordering
+Items in the backlog were ordered by dependency to the other items and importance to the owner stakeholder.
+
