@@ -29,8 +29,8 @@ RUN /usr/local/bin/composer install --no-scripts --no-dev && \
     /usr/local/bin/composer install --no-dev
 
 # Change permissions for writable folders and change ownership
-RUN chmod -R 777 /var/www/html/storage/ && \
-    chmod -R 777 /var/www/html/bootstrap/cache && \
+RUN chmod -R 775 /var/www/html/storage/ && \
+    chmod -R 775 /var/www/html/bootstrap/cache && \
     chown -R apache:apache /var/www/html
 
 # Configure apache and laravel queue on supervisor
