@@ -54,5 +54,5 @@ $ docker exec -it makata php artisan migrate
 
 You may need to run the seeds to populate the database
 ```
-$ docker exec -it smui php artisan db:seed
+$ docker exec -it makata php artisan db:seed
 ```
