@@ -25,8 +25,8 @@ COPY . /var/www/html/
 WORKDIR /var/www/html
 
 # Update Laravel packages
-RUN /usr/local/bin/composer install --no-scripts --no-dev && \
-    /usr/local/bin/composer install --no-dev
+RUN /usr/local/bin/composer install --no-scripts && \
+    /usr/local/bin/composer install
 
 # Change permissions for writable folders and change ownership
 RUN chmod -R 775 /var/www/html/storage/ && \
