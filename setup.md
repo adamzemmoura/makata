@@ -1,10 +1,10 @@
 # Local development
 
-[Initial setup](#initial)
+- [Initial setup](#initial)
 
-[Ongoing use](#ongoing)
+- [Ongoing use](#ongoing)
 
-[Reset everything](#reset)
+- [Reset everything](#reset)
 
 <a name="initial"></a>
 ## Initial setup
