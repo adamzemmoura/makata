@@ -66,6 +66,7 @@ docker images
 ```
 
 Run the container mapping the folders for local development
+- This should be run from inside the makata folder
 ```
 docker run -d --network makatanet --rm --name makata -p 80:80 -v `pwd`/app:/var/www/html/app -v `pwd`/config:/var/www/html/config -v `pwd`/database:/var/www/html/database -v `pwd`/public:/var/www/html/public -v `pwd`/resources:/var/www/html/resources -v `pwd`/routes:/var/www/html/routes -v `pwd`/tests:/var/www/html/tests -v `pwd`/.env:/var/www/html/.env makata
 ```
@@ -109,6 +110,7 @@ docker run --network makatanet --rm --name mysql -p 13306:3306 -v `pwd`/mysql:/v
 ```
 
 - Start the Makata application
+-- This code should be run from one folder up from the makata directory
 ```
 docker run -d --network makatanet --rm --name makata -p 80:80 -v `pwd`/makata/app:/var/www/html/app -v `pwd`/makata/config:/var/www/html/config -v `pwd`/makata/database:/var/www/html/database -v `pwd`/makata/public:/var/www/html/public -v `pwd`/makata/resources:/var/www/html/resources -v `pwd`/makata/routes:/var/www/html/routes -v `pwd`/makata/tests:/var/www/html/tests -v `pwd`/makata/.env:/var/www/html/.env makata
 ```
