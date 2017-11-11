@@ -1,12 +1,12 @@
 FROM centos:7
-MAINTAINER Jose Andrade <jandrade@gmail.com>
+LABEL maintainer="jandrade@gmail.com"
 EXPOSE 80
 
 # Install dependencies
 RUN yum update -y && \
     yum install -y epel-release && \
     rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm && \
-    yum install -y httpd php71w php71w-mcrypt php71w-mysql php71w-mbstring php71w-xml php71w-ldap php71w-cli mysql supervisor git && \
+    yum install -y httpd php71w php71w-mcrypt php71w-mysql php71w-mbstring php71w-xml php71w-ldap php71w-cli git mysql supervisor git && \
     yum -y clean all
 
 # set Apache environment variables
