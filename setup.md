@@ -4,6 +4,8 @@
 
 - [Ongoing use](#ongoing)
 
+- [Working in a containet](#container)
+
 - [Reset everything](#reset)
 
 <a name="initial"></a>
@@ -142,6 +144,37 @@ docker exec -it makata php artisan migrate
 -- And most likely seed the database
 ```
 docker exec -it makata php artisan db:seed
+```
+
+<a name="container"></a>
+## Working in a container
+
+To use bash inside of the makata container do this:
+```
+docker exec -it makata bash
+```
+Once connected you may use many of the bash commands
+```
+ls
+pwd
+cd <folder>
+```
+
+To connect to the database using the mysql client, we can first connect to the makata container
+```
+docker exec -it makata bash
+```
+and then connect to the database
+```
+mysql -h mysql -u root -p
+```
+once on the engine, you can use the makatadb database
+```
+use makatadb
+```
+You may display the contents of the users table
+```
+select * from users;
 ```
 
 <a name="reset"></a>
