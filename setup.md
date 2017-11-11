@@ -6,7 +6,8 @@
 
 [Reset everything](#reset)
 
-## Initial setup<a name="initial"></a>
+<a name="initial"></a>
+## Initial setup
 
 Download and install Docker
 
@@ -90,7 +91,10 @@ Open a browser. The application should be running on [localhost](http://localhos
 
 Open the repo with the files on your favorite code editor and make magic happen!
 
-## Ongoing development<a name="ongoing"></a>
+<a name="ongoing"></a>
+## Ongoing development
+
+This step is needed if the containers stopped running (because Docker was stopped or the computer restarted)
 
 Always start from the agileclass folder
 
@@ -140,7 +144,8 @@ docker exec -it makata php artisan migrate
 docker exec -it makata php artisan db:seed
 ```
 
-## Reset everything<a name="reset"></a>
+<a name="reset"></a>
+## Reset everything
 
 This will help you clean up if something is really wrong
 
