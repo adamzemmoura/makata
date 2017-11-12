@@ -18,7 +18,7 @@ class CreateSongsTable extends Migration
             $table->string('name');
             $table->float('length', 100, 2);
             $table->string('tempo');
-            $table->string('url');
+            $table->string('path');
             $table->timestamps();
         });
     }
