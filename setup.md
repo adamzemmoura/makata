@@ -71,7 +71,7 @@ docker images
 
 Run the container mapping the folders for local development
 ```
-docker run -d --network makatanet --rm --name makata -p 80:80 -v `pwd`/makata/app:/var/www/html/app -v `pwd`/makata/config:/var/www/html/config -v `pwd`/makata/database:/var/www/html/database -v `pwd`/makata/public:/var/www/html/public -v `pwd`/makata/resources:/var/www/html/resources -v `pwd`/makata/routes:/var/www/html/routes -v `pwd`/makata/tests:/var/www/html/tests -v `pwd`/makata/.env:/var/www/html/.env makata
+docker run -d --network makatanet --rm --name makata -p 80:80 -v `pwd`/makata:/var/www/html makata
 ```
 
 You should see the Makata container running
@@ -117,7 +117,7 @@ docker run --network makatanet --rm --name mysql -p 13306:3306 -v `pwd`/mysql:/v
 
 - Start the Makata application
 ```
-docker run -d --network makatanet --rm --name makata -p 80:80 -v `pwd`/makata/app:/var/www/html/app -v `pwd`/makata/config:/var/www/html/config -v `pwd`/makata/database:/var/www/html/database -v `pwd`/makata/public:/var/www/html/public -v `pwd`/makata/resources:/var/www/html/resources -v `pwd`/makata/routes:/var/www/html/routes -v `pwd`/makata/tests:/var/www/html/tests -v `pwd`/makata/.env:/var/www/html/.env makata
+docker run -d --network makatanet --rm --name makata -p 80:80 -v `pwd`/makata:/var/www/html makata
 ```
 
 -- Update packages to the latest version
