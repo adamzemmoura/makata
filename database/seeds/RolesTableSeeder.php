@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Database\Seeder;
+<<<<<<< HEAD
 use Carbon\Carbon;
+=======
+>>>>>>> be3381b32478dd2ee5fe0f1607e974b719d1f4a5
 
 class RolesTableSeeder extends Seeder
 {
@@ -13,6 +16,7 @@ class RolesTableSeeder extends Seeder
     public function run()
     {
         Eloquent::unguard();
+<<<<<<< HEAD
 
         $faker = Faker\Factory::create();
         
@@ -27,3 +31,15 @@ class RolesTableSeeder extends Seeder
         ]);
     }
 }
+=======
+        
+        DB::table('roles')->insert([
+            'name' => 'admin'
+        ]);
+
+        DB::table('roles')->insert([
+            'name' => 'user'
+        ]);
+    }
+}
+>>>>>>> be3381b32478dd2ee5fe0f1607e974b719d1f4a5
