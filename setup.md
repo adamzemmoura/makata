@@ -1,10 +1,31 @@
-### Local development
+# Local development
+
+- [Initial setup](#initial)
+
+- [Ongoing use](#ongoing)
+
+- [Working in a containet](#container)
+
+- [Reset everything](#reset)
+
+<a name="initial"></a>
+## Initial setup
 
 Download and install Docker
 
 [Mac](https://www.docker.com/docker-mac)
 
 [Windows](https://www.docker.com/docker-windows)
+
+Create a project folder
+```
+mkdir agileclass
+```
+
+Change directory to that folder
+```
+cd agileclass
+```
 
 Create a docker network:
 ```
@@ -32,20 +53,15 @@ Clone this repo
 git clone https://github.com/hakuna-ma-kata/makata.git
 ```
 
-Go into the new folder
-```
-cd makata
-```
-
 Copy the example .env.example file to a new .env:
 ```
-cp .env.example .env
-chmod 600 .env
+cp makata/.env.example makata/.env
+chmod 600 makata/.env
 ```
 
 Build a Makata container (and grab a coffee - this may take a little while):
 ```
-docker build -t makata . -f docker/Dockerfile
+docker build -t makata makata/ -f makata/docker/Dockerfile
 ````
 
 You should see the Makata container available among the local images
@@ -55,7 +71,7 @@ docker images
 
 Run the container mapping the folders for local development
 ```
-docker run -d --network makatanet --rm --name makata -p 80:80 -v `pwd`/app:/var/www/html/app -v `pwd`/config:/var/www/html/config -v `pwd`/database:/var/www/html/database -v `pwd`/public:/var/www/html/public -v `pwd`/resources:/var/www/html/resources -v `pwd`/routes:/var/www/html/routes -v `pwd`/tests:/var/www/html/tests -v `pwd`/.env:/var/www/html/.env makata
+docker run -d --network makatanet --rm --name makata -p 80:80 -v `pwd`/makata/app:/var/www/html/app -v `pwd`/makata/config:/var/www/html/config -v `pwd`/makata/database:/var/www/html/database -v `pwd`/makata/public:/var/www/html/public -v `pwd`/makata/resources:/var/www/html/resources -v `pwd`/makata/routes:/var/www/html/routes -v `pwd`/makata/tests:/var/www/html/tests -v `pwd`/makata/.env:/var/www/html/.env makata
 ```
 
 You should see the Makata container running
@@ -76,3 +92,113 @@ docker exec -it makata php artisan db:seed
 Open a browser. The application should be running on [localhost](http://localhost)
 
 Open the repo with the files on your favorite code editor and make magic happen!
+
+<a name="ongoing"></a>
+## Ongoing development
+
+This step is needed if the containers stopped running (because Docker was stopped or the computer restarted)
+
+Always start from the agileclass folder
+
+- Pull the latest changes from the repo
+```
+cd makata;git pull origin master
+```
+
+- Move back to the original folder
+```
+cd ..
+```
+
+- Start the database container:
+```
+docker run --network makatanet --rm --name mysql -p 13306:3306 -v `pwd`/mysql:/var/lib/mysql -e MYSQL_DATABASE=makatadb -e MYSQL_ROOT_PASSWORD=secret -d mysql
+```
+
+- Start the Makata application
+```
+docker run -d --network makatanet --rm --name makata -p 80:80 -v `pwd`/makata/app:/var/www/html/app -v `pwd`/makata/config:/var/www/html/config -v `pwd`/makata/database:/var/www/html/database -v `pwd`/makata/public:/var/www/html/public -v `pwd`/makata/resources:/var/www/html/resources -v `pwd`/makata/routes:/var/www/html/routes -v `pwd`/makata/tests:/var/www/html/tests -v `pwd`/makata/.env:/var/www/html/.env makata
+```
+
+-- Update packages to the latest version
+```
+docker exec -it makata composer install
+```
+
+-- Run the latest migrations
+```
+docker exec -it makata php artisan migrate
+```
+
+### WARNING: these steps may be dangerous
+-- Reset the database (it will delete everything on the database):
+```
+docker exec -it makata php artisan reset
+```
+
+-- After resetting you will need to run migrations again
+```
+docker exec -it makata php artisan migrate
+```
+
+-- And most likely seed the database
+```
+docker exec -it makata php artisan db:seed
+```
+
+<a name="container"></a>
+## Working in a container
+
+To use bash inside of the makata container do this:
+```
+docker exec -it makata bash
+```
+Once connected you may use many of the bash commands
+```
+ls
+pwd
+cd <folder>
+```
+
+To connect to the database using the mysql client, we can first connect to the makata container
+```
+docker exec -it makata bash
+```
+and then connect to the database
+```
+mysql -h mysql -u root -p
+```
+once on the engine, you can use the makatadb database
+```
+use makatadb
+```
+You may display the contents of the users table
+```
+select * from users;
+```
+
+<a name="reset"></a>
+## Reset everything
+
+This will help you clean up if something is really wrong
+
+Stop the containers
+```
+docker stop mysql
+docker stop makata
+```
+
+Delete the images
+```
+docker rmi -f mysql
+docker rmi -f makata
+````
+
+Delete the folders with the code
+### WARNING: Execute these commands from the agileclass folder
+```
+rm -rf makata
+rm -rf mysql
+```
+
+Once you've gone through these steps you may go back to the [Initial setup](#initial)
