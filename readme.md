@@ -65,3 +65,8 @@ https://trello.com/b/0x2NUutv/csci-e-71-agile-software-development-final-project
 ## Ordering
 Items in the backlog were ordered by dependency to the other items and importance to the owner stakeholder.
 
+## Sprint Forecast
+We have estimated the story points we can complete this sprint at 41 story points.  
+
+This was decided solely by the developers and their assessment of the work as part of the sprint planning meeting.  Being our first sprint, we anticipate our accuracy in estimation not to be as high as we might like but expect our forecast accuracy to improve in subsequent sprints. Our current forecast compared with analysis of work achieved this sprint, will be utilized as a data point to allow us to more accurately forecast the next sprint.
+
